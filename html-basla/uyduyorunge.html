@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Orbits</title>
+</head>
+<style>
+     body{
+           background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+       color: aliceblue;
+       text-shadow: 1px 1px 2px rgba(0, 6, 52, 0.8), 0 0 4px rgba(0, 16, 140, 0.5);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       font-family: sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 123, 205, 0.8), 0 0 4px rgba(8, 41, 189, 0.5);
+    padding: 40px;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+        }
+        #arka-plan-video{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -3;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    .video-filtresi{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 17, 40, 0.5);
+      z-index: -2;
+      pointer-events: none;
+    }
+    h1{
+      background-color: rgba(0, 0, 0, 0.403);
+    border-radius: 12px;
+    padding: 20px;
+  border: solid blue;
+  border-radius: 25px;
+  color: #00ff1e;
+    padding: 7px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    }
+    p{
+          color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px 2px rgba(0, 123, 205, 0.8), 0 1 4px rgba(8, 41, 189, 0.5);
+    margin: 2;
+    padding: 10px;
+    position: relative;
+    }
+    .paragraf{
+        color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.7;
+    box-shadow: 0 0 10px rgb(253, 253, 253);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+    text-align: left;
+  }
+  img{
+     border: 5px solid rgb(253, 253, 250);
+        border-radius: 20px;
+        padding: 5px;
+        display: block;
+        margin: 20px auto;
+        box-shadow: 0 0 10px blue;
+  }
+  .yorunge{
+    background-color: rgba(0, 0, 0, 0.403);
+    border-radius: 12px;
+    padding: 20px;
+  border: solid blue;
+  border-radius: 25px;
+  color: #ffffff;
+    padding: 7px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+}
+</style>
+<body>
+  <div id="google_translate_element" style="padding: 10px; text-align: right;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//://google.com"></script>
+    <video autoplay loop muted playsinline id="arka-plan-video">
+  <source src="https://www.pexels.com/download/video/11519743/" type="video/mp4">
+  Tarayıcınız video etiketini desteklemiyor.
+</video>
+    <h1>Uydular Nasıl Çalışır ve Yörüngeleri Nelerdir?</h1>
+    <p class="paragraf"> 17. yüzyılda Johannes Kepler tarafından ilk kez modern yörünge anlayışı ortaya konulmuştur.<br>
+         Bu matematiksel ve fiziksel kurallar, üzerinden 400 yıl geçmesine rağmen bugün bile geçerliliğini ve niteliğini tam anlamıyla korumaktadır.<br>
+          Yörünge, uzaydaki bir cismin kütle çekimi nedeniyle başka bir cismin etrafında izlediği kavisli yoldur.<br>
+           Uydularımız, gözlemevlerimiz ve sondalarımız uzaya roketler aracılığıyla fırlatılırken bu yörünge mekaniği hesaplamalarına göre konumlandırılır.<br>
+            Temel olarak 5 adet yörünge sınıfı mevcuttur:<br> </p>
+<h2 class="yorunge"> 1. LEO (Alçak Dünya Yörüngesi):</h2>
+    <p class="paragraf"> Yeryüzüne en yakın yörüngedir.<br>
+         Yer gözlem, haritacılık ve yüksek çözünürlüklü görüntüleme uyduları, Dünya'ya yakınlığı sayesinde en net ve keskin fotoğrafları çekebilmek için bu yörüngeyi kullanır.</p>
+<h2 class="yorunge"> 2. GEO (Yer Sabit Yörünge):</h2> 
+<p class="paragraf"> Uyduların bu yörüngeye fırlatılma amacı, Dünya'nın kendi etrafındaki dönüş hızıyla eş zamanlı dönmelerini sağlamaktır.<br>
+     Böylece uydular yeryüzünden bakıldığında gökyüzünde hep aynı noktada sabit kalır ve kesintisiz televizyon yayını, hava durumu takibi ve küresel iletişimi sağlar.</p>
+<h2 class="yorunge"> 3. MEO (Orta Dünya Yörüngesi):</h2> 
+<p class="paragraf">Küresel navigasyon ve konumlandırma (GPS, Galileo vb.) sistemleri için en uygun yörüngedir.<br>
+     Teknolojik cihazlarımızdaki navigasyon hizmetleri için küresel ölçekte eş zamanlı ve kesintisiz kapsama alanı sunar. <br>
+     MEO'daki uydular LEO'ya kıyasla daha yüksekte bulunduğundan, Dünya yüzeyinde çok daha geniş alanları aynı anda görebilme avantajına sahiptir.</p>
+<h2 class="yorunge"> 4. HEO (Yüksek Derecede Eliptik Yörünge):</h2> 
+<p class="paragraf"> Bu özel elips rotaları sayesinde Dünya'nın kutup bölgelerinin üzerinde çok uzun süreler boyunca asılı kalır.<br>
+     Bu sayede normal uyduların görmekte zorlandığı yüksek enlemlerde ve kutup bölgelerinde kesintisiz iletişim ve gözlem imkanı tanır.</p>
+<h2 class="yorunge"> 5. Lagrange Noktaları:</h2>
+<p class="paragraf"> Derin uzay gözlemleri için teleskopların yerleştirildiği mükemmel denge noktalarıdır.<br>
+     Teleskoplar buralara konumlandırılarak; Dünya, Ay ve Güneş Sistemi'ndeki Venüs veya Jüpiter gibi parlak gezegenlerin yarattığı ışık ve ısı kirliliğinden uzaklaşır. <br>
+     Aynı zamanda gezegenler arası toz parçacıklarının Güneş ışığını saçmasıyla oluşan "Zodyak Işığı" gürültüsünden de sıyrılarak, evrenin en uzak noktalarını tamamen karanlık, temiz ve geniş bir açıyla izleme fırsatı yakalar. </p>
+     Kaynakça: <a href="https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits">ESA</a>
+</body>
+</html>

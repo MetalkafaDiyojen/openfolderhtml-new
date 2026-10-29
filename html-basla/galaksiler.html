@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxies & Planets</title>
+</head>
+<style>
+    body{
+       background-color: transparent; 
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+       color: aliceblue;
+       text-shadow: 1px 1px 2px rgba(0, 6, 52, 0.8), 0 0 4px rgba(0, 16, 140, 0.5);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       font-family: sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 123, 205, 0.8), 0 0 4px rgba(8, 41, 189, 0.5);
+    padding: 40px;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    }
+     #arka-plan-video{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -3;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    .video-filtresi{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 17, 40, 0.5);
+      z-index: -2;
+      pointer-events: none;
+    }
+    h1{
+          color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px 2px rgba(0, 123, 205, 0.8), 0 1 4px rgba(8, 41, 189, 0.5);
+    padding: 40px;
+    margin: 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.7;
+    box-shadow: 0 0 10px blue;
+    }
+    p{
+          color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px 2px rgba(0, 123, 205, 0.8), 0 1 4px rgba(8, 41, 189, 0.5);
+    margin: 2;
+    padding: 10px;
+    position: relative;
+    }
+    .konu-bolumu{
+       width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .konu-kartlari{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+       justify-content: center;
+       padding: 20px;
+text-align: center;
+align-items: stretch;
+font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    .konu-karti{
+        padding: 25px;
+    background: rgba(25, 20, 55, 0.58);
+    transition: transform 3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px blue;
+    box-shadow: 0 0 10px blue;
+    border: 3px solid rgb(253, 253, 250);
+         border-radius: 20px;
+        width: calc(33.333% - 15px);
+        min-width: 200px;
+        margin: 7px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(33.333% - 20px);
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    }
+    .konu-karti button,
+  .konu-karti a{
+    background: rgba(0, 0, 0, 0.619);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    border: black;
+    padding: 12px 30px;
+    font-size: 18px;
+    display: inline-block;
+    box-shadow: 0 0 10px blue;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+  }
+  .konu-karti:hover{
+    transform: translateY(-5px);
+    border-color: rgb(0, 128, 255);
+    box-shadow: 0 8px 28px aqua;
+  }
+  .konu-karti button:hover,
+  .konu-karti a:hover{
+    background: rgba(150, 90, 220, 0.45);
+    box-shadow: 0 0 8px #0284c7, 0 0 15px #38bdf8, inset 0 0 4px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  .yazi{
+    color:white;
+    text-align: center;
+    text-shadow:  1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-size: 1.5rem
+  }
+</style>
+<body>
+    <div id="google_translate_element" style="padding: 10px; text-align: right;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//://google.com"></script>
+      <video autoplay loop muted playsinline id="arka-plan-video">
+  <source src="https://www.pexels.com/download/video/29309720/" type="video/mp4">
+  Tarayıcınız video etiketini desteklemiyor.
+</video>
+    <h1>GALAKSİLER & GEZEGENLER</h1>
+    <p class="yazi">Galaksilerde yolculuk yap, gezegenlerde mola ver!</p>
+    <hr>
+<div style="width: 100%; max-width: 1000px; margin: 20px auto; position: relative; border-radius: 12px; overflow: hidden; border: 2px solid #66fcf1; box-shadow: 0 0 25px rgba(102, 252, 241, 0.4); background: #000; font-family: sans-serif;">
+<img src="solarsystem.jpg" alt="Güneş Sistemi" style="width: 100%; height: 400px; object-fit: cover; opacity: 0.6; display: block;">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(11, 12, 16, 0.2)); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;">
+<h3 style="color: blue; margin-bottom: 10px; font-size: 26px; text-shadow; 0 0 10px rgba(101, 252, 241, 0.5);">İnteraktif 3D Güneş Sistemi Modeli</h3>
+<p style="color: #c5a1ff; margin-bottom: 25px; font-size: 16px; max-width: 600px;">Sistemimiz şu anda aktiftir. NASA motoru üzerinden gezegenleri döndürmek ve keşfe başlamak için aşağıdaki butona tıklayarak tam ekran moduna geçiş yapın.</p>
+<a href="https://eyes.nasa.gov/apps/solar-system" target="_blank" class="simulasyon-butonu" style="display: inline-block; padding: 14px 35px; background: #66fcf1; color:#0b0c10; font-weight: bold; text-decoration: none; border-radius: 30px; box-shadow: 0 0 20px rgba(102, 252, 241, 0.6); font-size: 16px; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s;">
+    Simülasyonu Başlat!
+</a>
+</div>
+    </div>
+    <section class="konu-bolumu">
+<div class="konu-kartlari">
+    <div class="konu-karti" >
+        <h2>Samanyolu & Komşu Galaksiler</h2>
+        <a href="samanyolu.html" class="link-buton">İncele</a>
+    </div>
+<div class="konu-karti">
+    <h2>Güneş Sistemi & Gezegenler</h2>
+    <a href="gunessistemi.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Ötegezegenler</h2>
+    <a href="otegezegenler.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Yıldızlar & Karadelikler</h2>
+    <a href="karadelikler.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Astreoitler, Kuyruklu Yıldızlar & Meteorlar</h2>
+    <a href="atroitler.html" class="link-buton">İncele</a>
+</div>
+</div>
+    </section>
+</html>

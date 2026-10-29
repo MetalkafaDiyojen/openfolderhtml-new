@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauts & Astronomers</title>
+</head>
+<style>
+    body{
+       background-color: transparent; 
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+       color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 123, 205, 0.8), 0 0 4px rgba(8, 41, 189, 0.5);
+    padding: 40px;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    }
+     #arka-plan-video{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -3;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    .video-filtresi{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 17, 40, 0.5);
+      z-index: -2;
+      pointer-events: none;
+    }
+    h1{
+         color: white;
+    text-align: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px 2px rgba(0, 123, 205, 0.8), 0 1 4px rgba(8, 41, 189, 0.5);
+    padding: 40px;
+    margin: 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.7;
+    box-shadow: 0 0 10px blue;
+    }
+    
+     .konu-bolumu{
+       width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .konu-kartlari{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+       justify-content: center;
+       padding: 20px;
+text-align: center;
+align-items: stretch;
+    }
+    .konu-karti{
+        padding: 25px;
+    background: rgba(25, 20, 55, 0.58);
+    transition: transform 3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px blue;
+    box-shadow: 0 0 10px blue;
+    border: 3px solid rgb(253, 253, 250);
+         border-radius: 20px;
+        width: calc(33.333% - 15px);
+        min-width: 200px;
+        margin: 7px;
+        box-sizing: border-box;
+        flex: 1 1 calc(33.333% - 20px);
+         display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(33.333% - 20px);
+        align-items: center;
+        justify-content: space-between;
+    }
+    .konu-karti button,
+  .konu-karti a{
+    background: rgba(0, 0, 0, 0.619);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    border: black;
+    padding: 12px 30px;
+    font-size: 18px;
+    display: inline-block;
+    box-shadow: 0 0 10px blue;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+  }
+  .konu-karti:hover{
+    transform: translateY(-5px);
+    border-color: rgb(0, 128, 255);
+    box-shadow: 0 8px 28px aqua;
+  }
+  .konu-karti button:hover,
+  .konu-karti a:hover{
+    background: rgba(150, 90, 220, 0.45);
+    box-shadow: 0 0 8px #0284c7, 0 0 15px #38bdf8, inset 0 0 4px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  .yazi{
+    color:white;
+    text-align: center;
+    text-shadow:  1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-size: 1.5rem
+  }
+  .astronot-aciklama{
+    color:white;
+    text-align: center;
+    text-shadow:  1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #003cff;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 16px;
+    padding: 10px 20px;
+  }
+  .astronom-aciklama{
+    color:white;
+    text-align: center;
+    text-shadow:  1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #003cff;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 16px;
+    padding: 10px 20px;
+  }
+</style>
+<body>
+    <div id="google_translate_element" style="padding: 10px; text-align: right;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//://google.com"></script>
+    <video autoplay loop muted playsinline id="arka-plan-video">
+  <source src="https://www.pexels.com/download/video/854255/" type="video/mp4">
+  Tarayıcınız video etiketini desteklemiyor.
+</video>
+    <h1>ASTRONOTLAR & ASTRONOMLAR</h1>
+    <p class="yazi">Deha Beyinler, Büyük Vizyonlar!</p>
+    <hr>
+    <section class="astronotlar-hakkinda">
+        <h2 class="astronot-aciklama">1. BÖLÜM: Astronotlar</h2>
+<div class="konu-kartlari">
+    <div class="konu-karti" >
+        <h2>Yuri Gagarin</h2>
+        <a href="yurigagarin.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Neil Armstrong</h2>
+   <a href="neilarmstrong.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Buzz Aldrin</h2>
+   <a href="buzzaldrin.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Valentina Tereshkova</h2>
+    <a href="valentina.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Alper Gezeravcı</h2>
+    <a href="alpergezeravci.html" class="link-buton">İncele</a>
+</div>
+    </section>
+    <section class="astronomlar-hakkinda">
+        <h2 class="astronom-aciklama">2. BÖLÜM: Astronomlar</h2>
+<div class="konu-kartlari">
+    <div class="konu-karti" >
+        <h2>Galileo Galilei</h2>
+        <a href="galileo.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Nicalous Copernicus</h2>
+    <a href="kopernik.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Johannes Kepler</h2>
+    <a href="kepler.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Edwin Hubble</h2>
+    <a href="Edwin.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Uluğ Bey</h2>
+    <a href="ulugbey.html" class="link-buton">İncele</a>
+</div>
+<div class="konu-karti">
+    <h2>Ali Kuşçu</h2>
+    <a href="Alikuscu.html" class="link-buton">İncele</a>
+</div>
+    </section>
+</body>
+</html>
