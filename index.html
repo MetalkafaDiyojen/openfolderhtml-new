@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond The Known Universe</title>
+</head>
+<style>
+    html, body {
+    background-color: transparent; 
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 40px;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    }
+    #arka-plan-video{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -3;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    .video-filtresi{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 17, 40, 0.5);
+      z-index: -2;
+      pointer-events: none;
+    }
+    h1{
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #000bde;
+      display: inline-block;
+      padding-bottom: 5px;
+      
+    }
+   .yildiz-arkaplan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1; 
+}
+.yildiz-arkaplan::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 
+    150px 120px rgba(255, 234, 117, 0.9),
+    450px 100px rgba(255, 215, 0, 0.9),
+    850px 300px rgba(255, 250, 205, 0.9),
+    1250px 150px rgba(255, 234, 117, 0.9),
+    350px 600px rgba(255, 215, 0, 0.9),
+    750px 750px rgba(255, 234, 117, 0.9),
+    1350px 480px rgba(255, 250, 205, 0.9),
+    950px 800px rgba(255, 234, 117, 0.9);
+  filter: drop-shadow(0 0 4px #ffd700) drop-shadow(0 0 8px #ffea75);
+  animation: gercekParilti1 3s ease-in-out infinite;
+}
+.yildiz-arkaplan::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 
+    250px 400px rgba(255, 215, 0, 0.8),
+    650px 180px rgba(255, 234, 117, 0.8),
+    1050px 550px rgba(255, 250, 205, 0.8),
+    1450px 220px rgba(255, 215, 0, 0.8),
+    550px 850px rgba(255, 250, 205, 0.8),
+    1150px 700px rgba(255, 234, 117, 0.8),
+    200px 700px rgba(255, 234, 117, 0.8);
+    
+  filter: drop-shadow(0 0 3px #ffd700);
+  animation: gercekParilti2 4s ease-in-out infinite;
+}
+
+@keyframes gercekParilti1 {
+  0%, 100% { opacity: 0.1; filter: drop-shadow(0 0 1px #ffd700) blur(0.5px); }
+  50% { opacity: 1; filter: drop-shadow(0 0 6px #ffd700) blur(0px); }
+}
+
+@keyframes gercekParilti2 {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 5px #ffd700) blur(0px); }
+  50% { opacity: 0.2; filter: drop-shadow(0 0 1px #ffd700) blur(0.5px); }
+}
+.koseliyildiz{
+  position: absolute;
+  background: #ffffff;
+  clip-path: polygon(50% 0%, 54% 38%, 100% 50%, 54% 54%, 50% 100%, 46% 54%, 0% 50%, 46% 38%);
+  filter: drop-shadow(0 0 0 8px rgba(255, 215, 0, 0.9));
+  opacity: 0.2;
+}
+.yildiz1{
+  top: 20%;
+  left: 15%;
+  width: 25px;
+  height: 25px;
+  animation: koseliParla 5s ease-in-out infinite ;
+}
+.yildiz2{
+  top: 65%;
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  animation: koseliParla 5s ease-in-out infinite 1s;
+}
+
+@keyframes koseliParla{
+  0%, 100%{
+    opacity: 0.2;
+    transform: scale(0.7) rotate(0deg);
+  }
+  50%{
+opacity: 1;
+transform: scale(1.2) rotate(5deg);
+  }
+}
+    img{
+        border: 5px solid rgb(253, 253, 250);
+        border-radius: 20px;
+        padding: 5px;
+        display: block;
+        margin: 20px auto;
+        box-shadow: 0 0 10px blue;
+    }
+    .galaksiler-ve-gezegenler {
+background-color: rgb(251, 250, 248);
+color: rgb(0, 0, 0);
+border: solid white;
+border-radius: 5px;
+padding: 15px;
+font-size: 25px;
+    }
+    h1{
+color: white;
+text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.8), 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+  .aciklama{
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.7;
+    box-shadow: 0 0 10px blue;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 4px rgba(0, 0, 0, 0.5)
+  }
+  h2{
+    color:white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.8), 0 0 4px rgba(0, 0, 0, 0.5);
+  }
+  h3{
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.8), 0 0  4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 0 10px blue;
+  }
+  .link-buton:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(241, 139, 243, 0.619);
+    transform: scale(1.05);
+  }
+  .link-buton{
+    background: rgba(0, 0, 0, 0.619);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    border: black;
+    padding: 12px 30px;
+    font-size: 18px;
+    display: inline-block;
+    box-shadow: 0 0 10px blue;
+    border-radius: 12px;
+    transition: transform 3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .kategoriler{
+padding: 50px 8%;
+color: #ffffff;
+text-align: center;
+  }
+  .kategoriler h4{
+    font-size: 30px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .kategori-giris{
+    color: rgb(255, 254, 254);
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+
+  }
+  .kategori-kartlari{
+    display: grid;
+    grid-template-columns: repeat(3, minimax(0, 1fr));
+    gap: 32px;
+    text-align: left;
+  }
+  .kategori-kartlari >div{
+    padding: 25px;
+    background: rgba(25, 20, 55, 0.58);
+    transition: transform 3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px blue;
+    box-shadow: 0 0 10px blue;
+    border: 3px solid rgb(253, 253, 250);
+        border-radius: 20px;
+        font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  .kategori-kartlari h5,
+  .kategori-kartlari h6{
+    color: #ff00cc;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 25px;
+  }
+  .kategori-kartlari p{
+    color: #ffffff;
+    line-height: 1;
+    font-size: 20px;
+  }
+  .kategori-kartlari button,
+  .kategori-kartlari a{
+    background: rgba(0, 0, 0, 0.619);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    border: black;
+    padding: 12px 30px;
+    font-size: 18px;
+    display: inline-block;
+    box-shadow: 0 0 10px blue;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .kategori-kartlari> div:hover{
+    transform: translateY(-5px);
+    border-color: rgb(0, 128, 255);
+    box-shadow: 0 8px 28px aqua;
+  }
+  .kategori-kartlari button:hover,
+  .kategori-kartlari a:hover{
+    background: rgba(150, 90, 220, 0.45);
+    box-shadow: 0 0 8px #0284c7, 0 0 15px #38bdf8, inset 0 0 4px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  .kategori-kartlari.galaksiler{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%), url(pia06890-our-solar-system-banner-1920x640-1.jpg);
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+  }
+  .kategori-kartlari.teleskoplar{
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%), url(Chandra20years.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+  }
+.kategori-kartlari.uydular{
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%), url(ourmoon.jpg);
+   background-size: cover;
+    background-size: cover;
+    background-position: right center;
+    position: relative;
+}
+.kategori-kartlari.astronotlar{
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%), url(neilarmstrong.jpg);
+  background-size: cover;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+.kategori-kartlari.teoriler{
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%), url(supernova.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    position: relative;
+}
+.aciklamalar {
+  border: dotted rgb(247, 247, 248);
+  border-radius: 16px;
+    color: #e2e2e2;
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 0 10px blue;
+}
+   
+.aciklamalar b {
+    color: aqua;
+    font-size: 1.1em;
+}
+.kategori-baslik{
+  background-color: rgba(0, 0, 0, 0.403);
+  border-radius: 12px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #000bde;
+      display: block;
+      padding-bottom: 5px;
+       justify-content: center;
+padding:5px;
+}
+.kategori-giris{
+  background-color: rgba(0, 0, 0, 0.403);
+    border-radius: 12px;
+    padding: 20px;
+  border: solid blue;
+  border-radius: 25px;
+  color: #ffffff;
+    padding: 7px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 1, 0.8), 0 0 4px rgba(0, 0, 1, 0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+
+}
+  .kaynakca{
+    text-align: center;
+    font-family: sans-serif;
+   
+    margin: 0;
+    position: absolute;
+    line-height: 1.7;
+    color: #ffffff; 
+    text-shadow: 0 0 8px rgba(0, 150, 255, 0.7);
+  }
+  .kaynakca a {
+    color: blue;
+    text-shadow: none;
+  }
+</style>
+<body>
+ 
+<div id="google_translate_element" style="padding: 10px; text-align: right;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'tr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//://google.com"></script>
+
+
+  <div class="yildiz-arkaplan"></div>
+  <div class="koseli-yildizlar1"></div>
+  <div class="koseli-yildizlar2"></div>
+        <h1>EVRENİN ÖTESİNDE!</h1>
+    <p id="oneri-aciklama" class="aciklamalar">
+    Evreni sorgula, bilinmeyeni keşfet. <br>
+   Burası tamamen <b>''Ya şöyle olsaydı...''</b> diyenlere ait. <br>
+   Fikirlerini genişlet, teorilerini yürüt ve evrenle dans et! </p>
+   <hr>
+   <h2>GÜNÜN ÖNERİSİ:</h2>
+   <h3 id="oneri-baslik"> Nedir Bu SPHEREx? </h3>
+   <p id="oneri-paragraf" class="aciklama"> Mart 2025'te fırlatılan SPHEREx, gökyüzünü hem optik hem de kızılötesi ışıkta inceleyebilen uzay gözlemevidir. <br>
+    Evrenin ilk anlarındaki kozmik şişmeyi (inflation) inceleyecek, <br>
+    450 milyondan fazla galaksinin ve Samanyolu'ndaki 100 milyondan fazla yıldızın 3 boyutlu haritasını çıkaracak, <br>
+    yıldız ve gezegen oluşum bölgelerinde su, karbondioksit ve metanol gibi yaşamın yapı taşı olan buz ve moleküllerin dağılımını araştıracak. <br>
+    Peki sizce bu büyüleyici icat bugüne kadar neler keşfetmiştir? </p>
+  <img id="oneri-gorsel" src="sphereX.jpg" alt="SPHEREx" width="500">
+  <p id="oneri-alt">SPHEREx Görseli</p>
+  <button onclick="OneriYenile()" class="link-buton"> <b>Yeni Öneri!</b></button>
+  <script>
+    const UzayOnerileri=[
+      {
+        baslik: "Dokuzuncumuz Kim? (Planet X)",
+        paragraf: `Ya galaksimizde bizimle tanışmayı bekleyen bir gezegen daha varsa? 
+        Evet! Gerçekten böyle bir gezegenin varlığı tahmin ediliyor. 
+        Dünya'nın yaklaşık 5 ila 10 katı kütleye sahip, Neptün boyutlarında gaz yapılı bir gezegen olabileceği düşünülmektedir.
+        Peki bunlar neye dayanarak söyleniyor?`,
+        gorsel: "cq5dam.web.1280.1280.jpg",
+        altyazi: "Planet X",
+      },
+      {
+        baslik: "Kara Deliğin Zıttı!",
+        paragraf: `Kara delik öyle güçlü bir kütleçekim kuvvetine sahiptir ki ışık bile onun içinde hapsolur. 
+        Onun olay ufkuna giren hiçbir madde ve enerji ondan kurtulamaz.
+        Bir de tam tersini düşünsek;
+        Bir yerlerde zaman tersine akıyor olabilir mi?`,
+        gorsel: "BEYAZdelikgorsel.jpg.jpeg",
+        altyazi:"Beyaz Delik",
+      },
+      {
+        baslik:"Uzaklarda Bir Bilinmezlik",
+        paragraf:`Güneş Sistemimizin ötesinde kalan ve farklı yıldız ya da kahverengi cücelerin etrafında dolanan bambaşka gezegenler var olabilir mi?
+        NASA Uzay Teleskopları aracılığıyla keşfedilen ve sayıları 6.000'i aşan ötegezegenler var!
+        Acaba bu gezegenlerin özellikleri nedir?`,
+        gorsel:"nasaotegezegen.jpg",
+        altyazi:"Ötegezegenler",
+      },
+      {
+        baslik:"Kıymetli Teleskobumuz: Hubble!",
+        paragraf:`24 Nisan 1990'da insanlık tarihinin en başarılı teleskobu fırlatıldı:
+      Hubble Uzay Teleskobu!
+      30 yılı aşkındır görevde olan bu teleskop sizce neleri keşfetmiş olabilir?`,
+        gorsel:"nasahubble.jpg",
+        altyazi:"Hubble Uzay Teleskobu",
+      },
+      {
+        baslik:"Ay'da Bir Türk İzi",
+      paragraf:`Tam adı Aleaddin Ali Bin Muhammed olan Ali Kuşçu, Türk-İslam tarihi için son derece önemli bir astronom, matematikçi ve dil bilginidir.
+      Timur Hükümdarı Uluğ Bey gibi dönemin büyük alimlerinden dersler aldı.
+      Uluğ Bey'in kurduğu Semerkant Rasathanesi'nin müdürlüğünü üstlendi.
+      15. yüzyıl şartları dahilinde Ay'ın ilk haritalarından birini çizdi ve gökcisimlerinin hareketlerini sıradışı bir hassasiyetle hesapladı.
+      Bu temel sebeplerden ötürü Ali Kuşçu'nun adının Ay'daki bir kratere verildiğini biliyor muydunuz?
+      Sizce bu büyük alim daha neleri başarmış olabilir?`,
+      gorsel:"aialikuscu.jpg",
+      altyazi:"Ali Kuşçu",
+      },
+      {
+        baslik:"Nedir Bu SPHERx?",
+        paragraf:`Mart 2025'te fırlatılan SPHEREx, gökyüzünü hem optik hem de kızılötesi ışıkta inceleyebilen uzay gözlemevidir.
+    Evrenin ilk anlarındaki kozmik şişmeyi (inflation) inceleyecek,
+    450 milyondan fazla galaksinin ve Samanyolu'ndaki 100 milyondan fazla yıldızın 3 boyutlu haritasını çıkaracak,
+    yıldız ve gezegen oluşum bölgelerinde su, karbondioksit ve metanol gibi yaşamın yapı taşı olan buz ve moleküllerin dağılımını araştıracak.
+    Peki sizce bu büyüleyici icat bugüne kadar neler keşfetmiştir?`,
+        gorsel:"sphereX.jpg",
+        altyazi:"SPHEREx",
+      },
+    ];
+    function OneriYenile(params) {
+    const rastgeleIndeks = Math.floor(Math.random() * UzayOnerileri.length);
+      const secilen= UzayOnerileri[rastgeleIndeks];
+      document.getElementById("oneri-baslik").innerText= secilen.baslik;
+      document.getElementById("oneri-paragraf").innerHTML= secilen.paragraf;
+      const resimKutusu= document.getElementById("oneri-gorsel");
+      resimKutusu.src= secilen.gorsel;
+      resimKutusu.alt= secilen.altyazi;
+      document.getElementById("oneri-alt").innerText= secilen.altyazi
+       }
+       window.onload= function() {
+        OneriYenile();
+       };
+  </script>
+<section class="kategoriler"> 
+  <h4 class="kategori-baslik"> <b>KEŞFETMEYE BAŞLA!</b></h4>
+  <p class="kategori-giris">
+    Merakının Sınırlarını Zorlamaya Hazır Mısın? </p>
+    <div class="kategori-kartlari">
+      <div class="kategori-kartlari galaksiler">
+  <h5>Galaksiler & Gezegenler</h5>
+  <p>Bu ilginç aleme bir göz at! </p>
+      <a href="galaksiler.html"
+      class="kategori-buton">Keşfet</a>
+</div>
+      <div class="kategori-kartlari teleskoplar">
+        <h6>Teleskoplar</h6>
+        <p>Evrenimizi görmemizi sağlayan bu araçlar neyin nesi?</p>
+      <a href="teleskoplar.html"
+      class="kategori-buton">Keşfet</a>
+      </div>
+      <div class="kategori-kartlari uydular">
+        <h5>Uydular & Gözlemevleri</h5>
+        <p>Haydi, uzayda seyahat edelim!</p>
+      <a href="uydular.html"
+      class="kategori-buton">Keşfet</a>
+      </div>
+      <div class="kategori-kartlari astronotlar">
+        <h6>Astronotlar & Astronomlar</h6>
+        <p>Sizce bu olağanüstü mekan için kimler neler yapmıştır?</p>
+     <a href="astronotlar.html"
+     class="kategori-buton">Keşfet</a>
+      </div>
+    <div class="kategori-kartlari teoriler">
+<h5>Akıl Almaz Teoriler</h5>
+<p>Bilinmeyeni sorgula!</p>
+ <a href="teoriler.html"
+ class="kategori-buton">Keşfet</a>
+    </div>
+  </section>
+ <div class="kaynakca">
+ Kaynakçalar: <a href="kaynakca.html" target="_blank">Tıkla!</a> <br>
+ </div>
+ <video autoplay loop muted playsinline id="arka-plan-video">
+  <source src="https://www.pexels.com/download/video/4318097/" type="video/mp4">
+  Tarayıcınız video etiketini desteklemiyor.
+</video>
+    </body>
+</html>
