@@ -379,7 +379,63 @@ html {
 <svg><defs>
 <g id="arrow-drop-down"><path d="M12,15.7L5.6,9.4l0.7-0.7l5.6,5.6l5.6-5.6l0.7,0.7L12,15.7z"></path></g>
 </defs></svg>
-</iron-iconset-svg><!--css-build:shady--><svg style="position: absolute; height: 0; width: 0;" aria-hidden="true"><defs><clippath id="android_messenger__a"><path fill="#fff" d="M0 0h60v60H0z"></path></clippath></defs></svg><iron-iconset-svg name="socialNetworks" size="48" style="display: none;"><svg><defs></defs></svg></iron-iconset-svg><iron-iconset-svg name="socialNetworksRound" size="60" style="display: none;"><svg><defs></defs></svg></iron-iconset-svg><style>img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }</style><style>img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }dom-bind,dom-if,dom-repeat{display:none;}</style><link href="./carpisma_files/css" rel="stylesheet" class="css-httpsfontsgoogleapiscomcssfamilyRoboto300italic400italic500italic700italic"><link href="./carpisma_files/css(1)" rel="stylesheet" class="css-httpsfontsgoogleapiscomcssfamilyRobotoMono400"><style>img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }</style><style>img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }ps-dom-if,ps-dom-repeat{display:none;}</style><script async="" src="./carpisma_files/lottie-light.js.indir" nonce=""></script><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><script src="./carpisma_files/base.js.indir" nonce=""></script><link id="player-css" href="./carpisma_files/www-player.css" rel="stylesheet"><script src="./carpisma_files/cast_sender(1).js.indir" nonce=""></script><link href="https://www.youtube.com/watch?v=fMNlt2FnHDg" rel="canonical"><meta http-equiv="origin-trial" content="AxjhRadLCARYRJawRjMjq4U8V8okQvSnrBIJWdMajuEkN3/DfVAcLcFhMVrUWnOXagwlI8dQD84FwJDGj9ohqAYAAABveyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJGZXRjaExhdGVyQVBJIiwiZXhwaXJ5IjoxNzI1NDA3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head><body dir="ltr" rounded-container=""><script nonce="">if (window.ytcsi) {window.ytcsi.tick('bs', null, '');}</script><script nonce="">ytcfg.set('initialBodyClientWidth', document.body.clientWidth);//# sourceURL=yt-desktop-body-width.js</script><script nonce="">if (window.ytcsi) {window.ytcsi.tick('ai', null, '');}</script><ytd-app fix-ambient-cutoff="" is-watch-page="" style="--ytd-masthead-height: 56px; --ytd-masthead-height-absolute: 56px; --ytd-network-status-banner-display: unset;"><!--css-build:shady--><!--css_build_scope:ytd-app--><!--css_build_styles:video.youtube.src.web.polymer.shared.ui.styles.yt_base_styles.yt.base.styles.css.js--><yt-guide-manager id="guide-service" class="style-scope ytd-app">
+</iron-iconset-svg><!--css-build:shady--><svg style="position: absolute; height: 0; width: 0;" aria-hidden="true"><defs><clippath id="android_messenger__a"><path fill="#fff" d="M0 0h60v60H0z"></path></clippath></defs></svg><iron-iconset-svg name="socialNetworks" size="48" style="display: none;"><svg><defs></defs></svg></iron-iconset-svg><iron-iconset-svg name="socialNetworksRound" size="60" style="display: none;"><svg><defs></defs></svg></iron-iconset-svg><style>
+  img, video { max-width: 100%; height: auto; }
+
+  body, div, section, main, article { 
+    display: block !important; 
+    width: 100% !important; 
+    float: none !important; 
+    box-sizing: border-box !important;
+  }
+
+  html, body {
+    min-height: 100vh !important;
+    background-attachment: fixed !important;
+  }
+img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }</style><style>
+  img, video { max-width: 100%; height: auto; }
+
+  body, div, section, main, article { 
+    display: block !important; 
+    width: 100% !important; 
+    float: none !important; 
+    box-sizing: border-box !important;
+  }
+
+  html, body {
+    min-height: 100vh !important;
+    background-attachment: fixed !important;
+  }
+img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }dom-bind,dom-if,dom-repeat{display:none;}</style><link href="./carpisma_files/css" rel="stylesheet" class="css-httpsfontsgoogleapiscomcssfamilyRoboto300italic400italic500italic700italic"><link href="./carpisma_files/css(1)" rel="stylesheet" class="css-httpsfontsgoogleapiscomcssfamilyRobotoMono400"><style>
+  img, video { max-width: 100%; height: auto; }
+
+  body, div, section, main, article { 
+    display: block !important; 
+    width: 100% !important; 
+    float: none !important; 
+    box-sizing: border-box !important;
+  }
+
+  html, body {
+    min-height: 100vh !important;
+    background-attachment: fixed !important;
+  }
+img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }</style><style>
+  img, video { max-width: 100%; height: auto; }
+
+  body, div, section, main, article { 
+    display: block !important; 
+    width: 100% !important; 
+    float: none !important; 
+    box-sizing: border-box !important;
+  }
+
+  html, body {
+    min-height: 100vh !important;
+    background-attachment: fixed !important;
+  }
+img, video { max-width: 100%; height: auto; } video { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100vh; width: auto; height: auto; z-index: -100; object-fit: cover; }ps-dom-if,ps-dom-repeat{display:none;}</style><script async="" src="./carpisma_files/lottie-light.js.indir" nonce=""></script><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><script src="./carpisma_files/base.js.indir" nonce=""></script><link id="player-css" href="./carpisma_files/www-player.css" rel="stylesheet"><script src="./carpisma_files/cast_sender(1).js.indir" nonce=""></script><link href="https://www.youtube.com/watch?v=fMNlt2FnHDg" rel="canonical"><meta http-equiv="origin-trial" content="AxjhRadLCARYRJawRjMjq4U8V8okQvSnrBIJWdMajuEkN3/DfVAcLcFhMVrUWnOXagwlI8dQD84FwJDGj9ohqAYAAABveyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJGZXRjaExhdGVyQVBJIiwiZXhwaXJ5IjoxNzI1NDA3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head><body dir="ltr" rounded-container=""><script nonce="">if (window.ytcsi) {window.ytcsi.tick('bs', null, '');}</script><script nonce="">ytcfg.set('initialBodyClientWidth', document.body.clientWidth);//# sourceURL=yt-desktop-body-width.js</script><script nonce="">if (window.ytcsi) {window.ytcsi.tick('ai', null, '');}</script><ytd-app fix-ambient-cutoff="" is-watch-page="" style="--ytd-masthead-height: 56px; --ytd-masthead-height-absolute: 56px; --ytd-network-status-banner-display: unset;"><!--css-build:shady--><!--css_build_scope:ytd-app--><!--css_build_styles:video.youtube.src.web.polymer.shared.ui.styles.yt_base_styles.yt.base.styles.css.js--><yt-guide-manager id="guide-service" class="style-scope ytd-app">
 </yt-guide-manager>
 <yt-mdx-manager class="style-scope ytd-app"></yt-mdx-manager>
 <yt-playlist-manager class="style-scope ytd-app"></yt-playlist-manager>
